@@ -42,3 +42,5 @@ RUN cv_version='3.2.0' \
 RUN wget https://bootstrap.pypa.io/get-pip.py \
 && python3 get-pip.py \
 && rm get-pip.py
+
+RUN pip install numpy==1.13.0rc2
