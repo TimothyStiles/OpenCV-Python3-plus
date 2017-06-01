@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 
 MAINTAINER Tim Stiles <tim@stiles.io> 
 # based on elenaalexandrovna/opencv-python3 base image
