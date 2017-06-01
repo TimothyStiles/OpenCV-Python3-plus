@@ -12,7 +12,7 @@ RUN apt-get update && \
     unzip \
     pkg-config \
     libswscale-dev \
-    python3.6 \
+    python-dev \
     python3-numpy \
     libtbb2 \
     libtbb-dev \
