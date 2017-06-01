@@ -2,6 +2,7 @@ FROM ubuntu:14.04
 
 MAINTAINER Tim Stiles <tim@stiles.io> 
 # based on elenaalexandrovna/opencv-python3 base image
+# adds GTK and video support
 
 RUN apt-get update && \
     apt-get install -y \
@@ -23,13 +24,12 @@ RUN apt-get update && \
     libavformat-dev \
     libgtk2.0-dev \
     pkg-config \
-    
     && apt-get -y clean all \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /
 
-RUN cv_version='3.2.0' \
+RUN cv_version='3.1.0' \
     && wget https://github.com/Itseez/opencv/archive/"$cv_version".zip \
     && unzip "$cv_version".zip \
     && mkdir /opencv-"$cv_version"/cmake_binary \
