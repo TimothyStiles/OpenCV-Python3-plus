@@ -23,6 +23,7 @@ RUN apt-get update && \
     libavformat-dev \
     libgtk2.0-dev \
     pkg-config \
+    docker.io \
     
     && apt-get -y clean all \
     && rm -rf /var/lib/apt/lists/*
